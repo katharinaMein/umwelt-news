@@ -1,0 +1,101 @@
+@import '../../styles.less';
+
+@card-padding-top: 2rem; 
+@card-padding-sides: 3rem; 
+
+.card-news-title{
+    display: block;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: solid 1px #dee2e6;
+}
+
+.card-box{
+    width: 100%;
+    max-width: 800px; 
+
+    @media only screen and (max-width: 900px){
+        width: 100%; 
+    }
+}
+.card-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 2rem 0; 
+
+    @media only screen and (max-width: 400px){
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+}
+.card-subtext{
+    font-size: 14px;
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+.news-container{
+    margin-top: 4rem;
+    margin-bottom: 250px; 
+    
+    @media only screen and (max-width: 700px){
+        margin-top: 2rem;
+        margin-bottom: 200px;
+    }
+
+    @media only screen and (max-width: 400px){
+        margin-bottom: 180px;
+    }
+}
+.single-card-container{
+    margin-bottom: 2rem; 
+}
+.news-text-contain{
+    border-bottom: none;
+    background-color: @primary;
+    padding: @card-padding-top @card-padding-sides calc(@card-padding-top * 2.5) @card-padding-sides;  
+    position: relative;
+
+    @media only screen and (max-width: 400px){
+        padding: 1.5rem 2rem 3rem 2rem;  
+    }
+}
+.pubDate{
+    position: absolute;
+    right: @card-padding-sides;
+
+    @media only screen and (max-width: 400px){
+        right: 2rem;
+    }
+}
+.source, .pubDate{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    color: rgb(151, 150, 150);
+
+    @media only screen and (max-width: 400px){
+        font-size: 14px;
+    }
+}
+.button{
+    background-color: @secondary;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px 0 0 0;
+    padding: 1rem 2rem; 
+    font-size: 16px;
+    letter-spacing: 0.7px;
+
+    @media only screen and (max-width: 400px){
+        font-size: 14px;
+    }
+}

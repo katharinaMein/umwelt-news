@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf) format('truetype');
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #528d3d;
+  border-color: #528d3d transparent #528d3d transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 26px;
+    word-wrap: break-word;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
+.logo {
+  font-family: 'Permanent Marker', cursive;
+  color: #528d3d;
+}
+#home-text {
+  max-width: 850px;
+  font-size: 20px;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  #home-text {
+    font-size: 17px;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #home-text {
+    font-size: 14px;
+  }
+}
+ul {
+  padding-inline-start: 15px;
+  margin-bottom: 250px;
+}
+@media only screen and (max-width: 700px) {
+  ul {
+    margin-bottom: 200px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  ul {
+    margin-bottom: 180px;
+  }
+}
+ul li a {
+  font-size: 18px;
+  color: #528d3d;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  ul li a {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  ul li a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="pt-2 news-container">
+    <div class="col-ms-12">
+        <div class="card">
+        <div class="card-body text-left card-box p-0">
+          <div *ngFor="let o of news; index as i" class="single-card-container">
+            <div *ngIf="(i <= 30)" class="news-text-contain p-3">
+                <span class="source">{{ o.source }}</span>
+                <span class="pubDate">{{o.pubDate | date:'mediumDate'}}</span>
+                <h2 class="d-block">{{o.title}}</h2>
+                <p class="card-description d-block">{{o.description}}</p>
+                <a href="{{o.link}}" target="_blank" class="btn btn-primary button">Mehr erfahren</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

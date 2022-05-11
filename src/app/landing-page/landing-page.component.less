@@ -1,0 +1,50 @@
+@import '../../styles.less';
+
+.logo{
+    font-family: 'Permanent Marker', cursive;
+    color: @secondary;
+}
+
+#home-text{
+    max-width: 850px;
+    font-size: 20px;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: 700px){
+        font-size: 17px;
+        margin-top: 2rem; 
+    }
+
+    @media only screen and (max-width: 400px){
+        font-size: 14px;
+    }
+}
+
+ul{
+    padding-inline-start: 15px;
+    margin-bottom: 250px; 
+
+    @media only screen and (max-width: 700px){
+        margin-bottom: 200px;
+    }
+
+    @media only screen and (max-width: 400px){
+        margin-bottom: 180px;
+    }
+
+    li{
+        a{
+            font-size: 18px; 
+            color: @secondary;
+            cursor: pointer;
+
+            @media only screen and (max-width: 700px){
+                font-size: 17px;
+            }
+
+            @media only screen and (max-width: 400px){
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import '../../styles.less';
+
+nav{
+    position: sticky;
+    top: 0; 
+    box-shadow: 0px 0px 5px 0px #cbcbcb;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    min-height: 60px;
+    z-index: 100;
+
+    .active{
+        background-color: @secondary;
+
+        a{
+            background-color: transparent;
+            color: white !important; 
+        }
+
+    }
+
+    li{
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover a{
+            color: @secondary;
+        }
+
+        a{
+            color: #302f2d;
+            font-size: 16px;
+        }
+    }
+
+    .logo-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:after, &:before{
+            content: none;
+        }
+
+        a{
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 1;
+            font-family: 'Permanent Marker', cursive;
+            color: @secondary;
+            font-size: 30px;
+            margin-right: 20px; 
+
+            @media only screen and (max-width: 805px){
+                font-size: 24px;
+                margin-right: 0;
+            }
+        }
+
+        button{
+            order: 2;
+        }
+    }
+
+    .navbar-toggle{
+        background-color: @secondary;
+        border-color: transparent;
+
+        .icon-bar{
+            background-color: white;
+        }
+    }
+}
+
+ul.navbar-nav{
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+

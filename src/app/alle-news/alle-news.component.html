@@ -1,0 +1,7 @@
+<h1>Alle News im Überblick</h1>
+<app-news *ngIf="news$ | async as loadedNews; else spinner" [news]="loadedNews"></app-news>
+<ng-template #spinner>
+    <div class="spinner-container">
+        <div class="lds-dual-ring"></div>
+    </div>
+</ng-template>

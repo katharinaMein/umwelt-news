@@ -1,0 +1,55 @@
+@import '../../styles.less';
+
+.footer-container{
+    width: 100%; 
+    padding: 10px 20px 20px 20px; 
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    bottom: 0; 
+    margin-left: -5rem; 
+
+    @media only screen and (max-width: 700px){
+        margin-left: -2.5rem; 
+    }
+
+    .footer-container-inner{
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logoFooter{
+        font-family: 'Permanent Marker', cursive;
+        color: @secondary;
+        font-size: 40px;
+
+        @media only screen and (max-width: 700px){
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 400px){
+            font-size: 26px;
+        }
+    }
+
+    .footer-text{
+        text-align: center;
+        color: rgb(156, 156, 156);
+        font-size: 12px;
+
+        @media only screen and (max-width: 700px){
+            font-size: 11px;
+        }
+    }
+
+    .big-text{
+        font-size: 14px;
+        margin-bottom: 1rem;
+        letter-spacing: 0.5px;
+
+        @media only screen and (max-width: 400px){
+            font-size: 12px;
+        }
+    }
+}

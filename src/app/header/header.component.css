@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004Hao.ttf) format('truetype');
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #528d3d;
+  border-color: #528d3d transparent #528d3d transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 26px;
+    word-wrap: break-word;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+nav {
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 0px 5px 0px #cbcbcb;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  min-height: 60px;
+  z-index: 100;
+}
+nav .active {
+  background-color: #528d3d;
+}
+nav .active a {
+  background-color: transparent;
+  color: white !important;
+}
+nav li {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav li:hover a {
+  color: #528d3d;
+}
+nav li a {
+  color: #302f2d;
+  font-size: 16px;
+}
+nav .logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo-header:after,
+nav .logo-header:before {
+  content: none;
+}
+nav .logo-header a {
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  font-family: 'Permanent Marker', cursive;
+  color: #528d3d;
+  font-size: 30px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 805px) {
+  nav .logo-header a {
+    font-size: 24px;
+    margin-right: 0;
+  }
+}
+nav .logo-header button {
+  order: 2;
+}
+nav .navbar-toggle {
+  background-color: #528d3d;
+  border-color: transparent;
+}
+nav .navbar-toggle .icon-bar {
+  background-color: white;
+}
+ul.navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
